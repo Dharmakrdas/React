@@ -21,7 +21,7 @@ const useProductList =()=>{
         setResturentList(data);
         // console.log(data);
       };
-      return resturentList.length > 0 ? resturentList : null
+      return resturentList.length > 0 ? resturentList : []
 }
 
 export default useProductList;

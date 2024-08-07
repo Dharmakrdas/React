@@ -1,6 +1,16 @@
+import { useState } from "react";
 import { APP_LOGO } from "./utils/constant";
 
 const Header = () => {
+  const [isSignIn,setSignIn] = useState(true)
+  const [count, setCount] = useState(1);
+
+  const handleCount =()=>{
+    setCount(count+1)
+    setCount((count)=>count+1);
+    console.log(count);
+    
+  }
     return (
       <div className="header-container">
         <div className="logo-container">
@@ -15,9 +25,9 @@ const Header = () => {
             <li>Home</li>
             <li>Cart</li>
             <li>About</li>
-            <li>SigIn</li>
           </ul>
         </div>
+        <button onClick={()=>setSignIn(!isSignIn)} type='button'>{isSignIn === true ? "SignIn" :"SignOut"}</button>
       </div>
     );
   };
