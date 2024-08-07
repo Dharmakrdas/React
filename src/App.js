@@ -1,6 +1,12 @@
-const Hello =()=>{
+import Header from './Header';
+import Body from './Body'
+
+const AppLayout =()=>{
     return(
-        <h1>Hello word from Raect Js</h1>
+       <>
+       <Header />
+       <Body />
+       </>
     )
 }
-export default Hello;
+export default AppLayout;
