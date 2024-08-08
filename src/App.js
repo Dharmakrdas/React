@@ -4,6 +4,7 @@ import {createBrowserRouter,RouterProvider,Outlet} from 'react-router-dom'
 import About from './About';
 import Contact from './Contact';
 import ErrorPage from './Error';
+import ResturentMenu from './ResturentMenu';
 
 
 const App =()=>{
@@ -31,6 +32,10 @@ const routes = createBrowserRouter([{
     {
         path:"contact",
         element:<Contact />
+    },
+    {
+        path:"resturent/:resid",
+        element:<ResturentMenu />
     }
 ]
 }])

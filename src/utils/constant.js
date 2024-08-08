@@ -6,7 +6,13 @@ export const PRODUCT_IMAGE = (id) => {
   return img;
 };
 
+export const APP_LOGO =
+  "https://marketplace.canva.com/EAFaFUz4aKo/2/0/1600w/canva-yellow-abstract-cooking-fire-free-logo-JmYWTjUsE-Q.jpg";
 
-export const APP_LOGO = "https://marketplace.canva.com/EAFaFUz4aKo/2/0/1600w/canva-yellow-abstract-cooking-fire-free-logo-JmYWTjUsE-Q.jpg";
+export const ROUNDED_STAR =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Featured_Star_green.svg/1200px-Featured_Star_green.svg.png";
 
-export const ROUNDED_STAR = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Featured_Star_green.svg/1200px-Featured_Star_green.svg.png"
+export const PRODUCT_DETAILS_API = (resturentId) => {
+  const ressult = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.96340&lng=77.58550&restaurantId=${resturentId}`;
+  return ressult;
+};

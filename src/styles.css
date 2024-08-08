@@ -19,8 +19,8 @@
     height: 48px;
 }
 .nav-container {
-    background-color: rgb(0, 255, 255);
-    width: 300px;
+    /* background-color: rgb(0, 255, 255); */
+    width: 350px;
     border-radius: 20px;
 }
 .nav-items {
@@ -73,7 +73,7 @@
 .normal-text {
     text-overflow: ellipsis;
     font-size: 14px;
-    line-height: 10px;
+    line-height: 15px;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -105,4 +105,59 @@
     border-radius: 10px;
     margin-left: 10px;
     background-color: #edebeb;
+}
+
+.resturent-details-container{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.resturent-text{
+    font-family: Gilroy_Bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.92);
+}
+.cuisines-text {
+    font-family: Gilroy_Bold;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.1px;
+    color: rgb(255, 82, 0);
+}
+
+.offer-container{
+    display: flex;
+}
+
+.offer-items{
+    border: 1px solid black;
+    padding: 2px;
+    margin: 10px;
+    width: 180px;
+    padding-left: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* height: 50px; */
+}
+.offer-items-text{
+    font-size: 14;
+    color: grey;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.offer-text-heading{
+    font-size: 14;
+    color: black;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.menu-container{
+    margin-top: 10px;
 }
