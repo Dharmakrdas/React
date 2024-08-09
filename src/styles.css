@@ -1,163 +1,246 @@
-
 .header-container {
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    display: flex;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    border-image: initial;
-    padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  display: flex;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-image: initial;
+  padding: 10px;
 }
 .logo-container {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .logo {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
 }
 .nav-container {
-    /* background-color: rgb(0, 255, 255); */
-    width: 350px;
-    border-radius: 20px;
+  /* background-color: rgb(0, 255, 255); */
+  width: 350px;
+  border-radius: 20px;
 }
 .nav-items {
-    justify-content: space-around;
-    display: flex;
+  justify-content: space-around;
+  display: flex;
 }
 .seach-container {
-    padding: 10px;
+  padding: 10px;
 }
 .resturent-cantainer {
-    flex-wrap: wrap;
-    display: flex;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .resturent-card {
-    width: 250px;
-    height: 350px;
-    border-radius: 10px;
-    margin: 20px;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 20px;
 }
 .product-img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px;
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
 }
 .product-details {
-    width: 90%;
-    height: 50%;
-    margin-left: 20px;
+  width: 90%;
+  height: 50%;
+  margin-left: 20px;
 }
 .product-name {
-    text-overflow: ellipsis;
-    font-size: 16px;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
 }
-
 
 .rating-container {
-    align-items: center;
-    height: 20px;
-    display: flex;
+  align-items: center;
+  height: 20px;
+  display: flex;
 }
 .rating-img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 .normal-text {
-    text-overflow: ellipsis;
-    font-size: 14px;
-    line-height: 15px;
-    white-space: nowrap;
-    overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 15px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.shimer-container{
-    display: flex;
-    flex-wrap: wrap;
+.shimer-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-.shimer-card{
-    width: 250px;
-    height: 350px;
-    border-radius: 10px;
-    margin: 30px;
-    border: 1px solid #edebeb;
-}
-
-.shimer-img{
-    width: 100%;
-    height: 50%;
-    border-radius: 10px;
-    background-color: #edebeb;
-    margin-bottom: 20px;
+.shimer-card {
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 30px;
+  border: 1px solid #edebeb;
 }
 
-.shimer-text{
-    width: 90%;
-    height: 18px;
-    margin: 5px;
-    border-radius: 10px;
-    margin-left: 10px;
-    background-color: #edebeb;
+.shimer-img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  background-color: #edebeb;
+  margin-bottom: 20px;
 }
 
-.resturent-details-container{
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
+.shimer-text {
+  width: 90%;
+  height: 18px;
+  margin: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: #edebeb;
 }
 
-.resturent-text{
-    font-family: Gilroy_Bold;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: -0.3px;
-    color: rgba(2, 6, 12, 0.92);
+.resturnt-menu-container{
+    width: 70%;
+    margin: auto;
+}
+.resturent-details-container {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.resturent-text {
+  font-family: Gilroy_Bold;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.3px;
+  color: rgba(2, 6, 12, 0.92);
 }
 .cuisines-text {
-    font-family: Gilroy_Bold;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: -0.1px;
-    color: rgb(255, 82, 0);
+  font-family: Gilroy_Bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.1px;
+  color: rgb(255, 82, 0);
 }
 
-.offer-container{
-    display: flex;
+.offer-container {
+  display: flex;
+overflow-x: auto;
+white-space: nowrap;
+-webkit-overflow-scrolling: touch;
+&::-webkit-scrollbar {
+   display: none;
+}
 }
 
-.offer-items{
-    border: 1px solid black;
-    padding: 2px;
-    margin: 10px;
-    width: 180px;
+.offer-items {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offer-items p{
+    line-height: 5px;
     padding-left: 25px;
-    border: 1px solid black;
-    border-radius: 10px;
-    /* height: 50px; */
+    padding-right: 25px;
 }
-.offer-items-text{
-    font-size: 14;
-    color: grey;
-    font-weight: bold;
-    line-height: 15px;
+.offer-items-text {
+  font-size: 14;
+  color: grey;
+  font-weight: bold;
+  line-height: 15px;
 }
 
-.offer-text-heading{
-    font-size: 14;
-    color: black;
-    font-weight: bold;
-    line-height: 15px;
+.offer-text-heading {
+  font-size: 14;
+  color: black;
+  font-weight: bold;
+  line-height: 15px;
 }
 
-.menu-container{
-    margin-top: 10px;
+.menu-container {
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.white-background{
+    background-color: #fff;
+    border-bottom: .2px solid rgb(194, 194, 194);
+}
+.down-arrow {
+  height: 20px;
+  width: 20px;
+}
+
+.heading-text{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* .menu-item-card{
+    display: flex;
+    
+} */
+
+.menu-item-img{
+    height: 180px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+
+.break {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.image-cantainer{
+    position: relative;
+}
+.image-cantainer .btn {
+    position: absolute;
+    bottom:0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: rgb(30, 222, 30);
+    font-size: 16px;
+    padding: 8px 20px;
+    border: 0.2px solid grey;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 120px;
+  }
+
+.product-list-container{
+width: 100%;
+
 }

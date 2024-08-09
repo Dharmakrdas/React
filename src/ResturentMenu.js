@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { PRODUCT_DETAILS_API } from "./utils/constant";
+import {
+  DOWN_ARROW,
+  PRODUCT_DETAILS_API,
+  PRODUCT_IMAGE,
+} from "./utils/constant";
 import ResturentDetailsCard from "./ResurentDetailsCard";
 import ResturentOffer from "./ResturentOffer";
+import ResturentOptionMenu from "./ResturentOptionMenu";
 
 const ResturentMenu = () => {
   const [resurent, setResturent] = useState("");
@@ -17,19 +22,13 @@ const ResturentMenu = () => {
     // console.log(result);
     setResturent(result?.data?.cards);
   };
-  const ResturentOptionMenu = ({ data }) => {
-    return (
-      <div className="menu-container">
-        <p className="offer-text-heading">{data?.title}({data?.itemCards?.length})</p>
-      </div>
-    );
-  };
+
   return (
-    <div>
-      <h1>{resurent[2]?.card?.card?.info?.name}</h1>
+    <div className="resturnt-menu-container">
+      <p className="heading-text">{resurent[2]?.card?.card?.info?.name}</p>
       <ResturentDetailsCard resturentCard={resurent[2]?.card?.card?.info} />
-      <h1>Deals for you</h1>
-      <div className="offer-container">
+      <p className="heading-text">Deals for you</p>
+      <div className="offer-container white-background">
         {resurent[3]?.card?.card?.gridElements?.infoWithStyle?.offers.map(
           (item) => (
             <ResturentOffer key={item?.info?.header} data={item} />

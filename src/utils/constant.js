@@ -16,3 +16,5 @@ export const PRODUCT_DETAILS_API = (resturentId) => {
   const ressult = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.96340&lng=77.58550&restaurantId=${resturentId}`;
   return ressult;
 };
+
+export const DOWN_ARROW = "https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png";
