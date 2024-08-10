@@ -12,7 +12,7 @@ import ShimemerProductDetails from "./Shimmer/ShimerProductDetails";
 
 const ResturentMenu = () => {
   const [resurent, setResturent] = useState([]);
-  const [isVisible,setVisible] = useState(null);
+  const [isVisible,setVisible] = useState(true);
   const { resid } = useParams();
   useEffect(() => {
     getResturentDetails();
@@ -24,6 +24,15 @@ const ResturentMenu = () => {
     // console.log(result);
     setResturent(result?.data?.cards);
   };
+
+  const handleClick=(id)=>{
+console.log("item click", id);
+// const data = [...resurent];
+// const result = resurent[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.find((item,index)=> index === id)
+// result[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.isVisible = !isVisible
+// setResturent(data);
+
+  }
 
   return resurent.length === 0 ? <ShimemerProductDetails /> : (
     <div className="resturnt-menu-container">
@@ -42,8 +51,8 @@ const ResturentMenu = () => {
           <ResturentOptionMenu
             key={item?.card?.card?.title}
             data={item?.card?.card}
-            isVisible={index ===  isVisible ? false : true }
-            setVisible={setVisible}
+            isVisible={isVisible}
+            setVisible={handleClick}
             index={index}
           />
         ) : null
