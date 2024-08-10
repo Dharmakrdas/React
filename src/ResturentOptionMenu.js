@@ -1,7 +1,9 @@
+import { useState } from "react";
 import ProductList from "./ProductList";
 import { DOWN_ARROW } from "./utils/constant";
 
-const ResturentOptionMenu = ({ data }) => {
+const ResturentOptionMenu = ({ data,isVisible ,setVisible ,index}) => {
+
     return (
       <div className="menu-container">
         <div className="menu-items">
@@ -9,16 +11,17 @@ const ResturentOptionMenu = ({ data }) => {
             {data?.title} ({data?.itemCards?.length})
           </p>
           <img
+          onClick={()=>setVisible(index)}
             alt="down-arrow.png"
             src={DOWN_ARROW}
             className="down-arrow"
           ></img>
         </div>
-        <div className="product-list-container">
+       {isVisible === true && ( <div className="product-list-container">
           {data?.itemCards.map((item) => (
-            <ProductList data={item?.card?.info} />
+            <ProductList key={item?.card?.info?.id} data={item?.card?.info} />
           ))}
-        </div>
+        </div>)}
       </div>
     );
   };

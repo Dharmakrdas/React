@@ -8,9 +8,11 @@ import {
 import ResturentDetailsCard from "./ResurentDetailsCard";
 import ResturentOffer from "./ResturentOffer";
 import ResturentOptionMenu from "./ResturentOptionMenu";
+import ShimemerProductDetails from "./Shimmer/ShimerProductDetails";
 
 const ResturentMenu = () => {
-  const [resurent, setResturent] = useState("");
+  const [resurent, setResturent] = useState([]);
+  const [isVisible,setVisible] = useState(null);
   const { resid } = useParams();
   useEffect(() => {
     getResturentDetails();
@@ -23,7 +25,7 @@ const ResturentMenu = () => {
     setResturent(result?.data?.cards);
   };
 
-  return (
+  return resurent.length === 0 ? <ShimemerProductDetails /> : (
     <div className="resturnt-menu-container">
       <p className="heading-text">{resurent[2]?.card?.card?.info?.name}</p>
       <ResturentDetailsCard resturentCard={resurent[2]?.card?.card?.info} />
@@ -35,11 +37,14 @@ const ResturentMenu = () => {
           )
         )}
       </div>
-      {resurent[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.map((item) =>
+      {resurent[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.map((item,index) =>
         item?.card?.card?.itemCards != undefined ? (
           <ResturentOptionMenu
             key={item?.card?.card?.title}
             data={item?.card?.card}
+            isVisible={index ===  isVisible ? false : true }
+            setVisible={setVisible}
+            index={index}
           />
         ) : null
       )}

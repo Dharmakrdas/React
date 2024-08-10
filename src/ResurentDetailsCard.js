@@ -3,6 +3,7 @@ import { ROUNDED_STAR } from "./utils/constant";
 const ResturentDetailsCard = ({ resturentCard }) => {
     return (
       <div className="resturent-details-container">
+        <div className="border">
         <div class="rating-container">
           <img class="rating-img" alt="rounded-star.png" src={ROUNDED_STAR} />
           <p className="resturent-text">
@@ -19,6 +20,7 @@ const ResturentDetailsCard = ({ resturentCard }) => {
           {resturentCard?.sla?.maxDeliveryTime} mins
         </p>
         <p class="normal-text">{resturentCard?.feeDetails?.message}</p>
+      </div>
       </div>
     );
   };

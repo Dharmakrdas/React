@@ -1,3 +1,12 @@
+a{
+  color: black;
+  text-decoration: none;
+}
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
 .header-container {
   justify-content: space-between;
   align-items: center;
@@ -110,11 +119,15 @@
     margin: auto;
 }
 .resturent-details-container {
-  border: 1px solid black;
-  padding: 10px;
+  border: 20px solid #edebeb;
+  border-top: 20px solid #fff;
   border-radius: 10px;
 }
+.border{
+ border: 1px solid #edebeb;
+ padding: 10px;
 
+}
 .resturent-text {
   font-family: Gilroy_Bold;
   font-weight: 700;
@@ -243,4 +256,37 @@ white-space: nowrap;
 .product-list-container{
 width: 100%;
 
+}
+.shimer-product-container{
+    width: 70%;
+    margin: auto;
+}
+.shimmer-header{
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #edebeb;
+    background-color: #edebeb;
+    border-radius: 10px;  
+}
+
+.shimer-product-card{
+    height: 420px;
+    width: 400px;
+    margin-left: 30pz;
+    margin-right: 30px;
+}
+.shimer-product-img{
+    height: 200px;
+    width: 390px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #edebeb;
+}
+.shimer-product-text{
+    height: 20px;
+    width: 390px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #edebeb;
 }

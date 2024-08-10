@@ -25,7 +25,7 @@ const Header = () => {
         <img className="logo" src={APP_LOGO} alt="logo.png"></img>
       </div>
       <div className="nav-container">
-        <ul className="nav-items">
+        <ul className="nav-items no-bullets">
           <li>
             <Link to={"/"}> Home</Link>
           </li>
