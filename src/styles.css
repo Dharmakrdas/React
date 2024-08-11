@@ -297,3 +297,13 @@ width: 100%;
   border: 1px solid black;
   border-radius: 10px;
 }
+
+.recomended-label{
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  line-height: 20px;
+  padding: 5px;
+  position: absolute;
+  margin-left: 20px;
+}

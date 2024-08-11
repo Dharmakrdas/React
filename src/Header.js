@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { APP_LOGO } from "./utils/constant";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "./Hooks/useOnlineStatus";
 
 const Header = () => {
   const [isSignIn, setSignIn] = useState(true);
   const [count, setCount] = useState(1);
+
+  const online = useOnlineStatus();
   /**
    * 1 > after initial render useEffect will call
    * 2 > if depencandy is not their inside useEffect then it call every render
@@ -37,7 +40,9 @@ const Header = () => {
           <li>
             <Link to={"/contact"}>Contact</Link>
           </li>
+          <li>  <Link>{online ? "online":"offline"}</Link></li>
           <li>
+          
             <button onClick={() => setSignIn(!isSignIn)} type="button">
               {isSignIn === true ? "SignIn" : "SignOut"}
             </button>
