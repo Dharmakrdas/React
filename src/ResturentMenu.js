@@ -1,29 +1,16 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {
-  DOWN_ARROW,
-  PRODUCT_DETAILS_API,
-  PRODUCT_IMAGE,
-} from "./utils/constant";
 import ResturentDetailsCard from "./ResurentDetailsCard";
 import ResturentOffer from "./ResturentOffer";
 import ResturentOptionMenu from "./ResturentOptionMenu";
 import ShimemerProductDetails from "./Shimmer/ShimerProductDetails";
+import useResturentMenu from "./Hooks/useResturentMenu";
 
 const ResturentMenu = () => {
-  const [resurent, setResturent] = useState([]);
   const [isVisible,setVisible] = useState(true);
   const { resid } = useParams();
-  useEffect(() => {
-    getResturentDetails();
-  }, []);
+  const resurent = useResturentMenu(resid);
 
-  const getResturentDetails = async () => {
-    const data = await fetch(PRODUCT_DETAILS_API(resid));
-    const result = await data.json();
-    // console.log(result);
-    setResturent(result?.data?.cards);
-  };
 
   const handleClick=(id)=>{
 console.log("item click", id);

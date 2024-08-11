@@ -6,13 +6,23 @@ class UserClass extends React.Component {
     this.state={
         count : 1
     }
+    console.log( this.props.name+ "  Constructor called");
+    
   }
   handleOnClick (){
     this.setState({
         count : this.state.count + 1
     })
   }
+  componentDidMount(){
+    console.log( this.props.name+" componentDidMount called");
+}
+componentDidUpdate(){
+    console.log(this.props.name+" componentDidUpdate called");
+}
   render() {
+    console.log(this.props.name+ " render is called");
+    
     return (
       <div className="user-info">
         <p>{this.state.count}</p>

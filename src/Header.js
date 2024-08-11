@@ -12,7 +12,7 @@ const Header = () => {
    *     if depandency not changed on that time it will call on initial render.
    */
   useEffect(() => {
-    console.log("Use effect called");
+    // console.log("Use effect called");
   }, []);
   const handleCount = () => {
     setCount(count + 1);

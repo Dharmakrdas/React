@@ -3,6 +3,7 @@ import ProductList from "./ProductList";
 import { DOWN_ARROW } from "./utils/constant";
 
 const ResturentOptionMenu = ({ data,isVisible ,setVisible ,index}) => {
+console.log("click item",isVisible);
 
     return (
       <div className="menu-container">
