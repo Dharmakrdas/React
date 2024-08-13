@@ -1,18 +1,22 @@
-import ResturentCard, { peopleChoice } from "./ResturentCard";
 import useProductList from "./Hooks/useProductList";
 import ShimerResturentCard from "./utils/ShimerResturentCard";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import useOnlineStatus from "./Hooks/useOnlineStatus";
+import MenuWidgetList from "./MenuWidgetList";
+import TopResturentList from "./TopResturentList";
+import OnlineResturent from "./OnlineResturent";
 
 const Body = () => {
-  const resturent = useProductList();
-
-  const RecomendedCard = peopleChoice(ResturentCard);
+  const resturentData = useProductList();
 
   const [searchText, setSearchText] = useState("");
-  const [resturentList, setResturentList] = useState(resturent);
   const online = useOnlineStatus();
+  const MenuList = resturentData[0]?.card?.card;
+  // console.log(MenuList);
+
+  const ResturentWithOnline =
+    resturentData[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+  const TopResturent = resturentData[1]?.card?.card;
 
   const seachHandle = () => {
     const data = [...resturent];
@@ -28,11 +32,11 @@ const Body = () => {
         detials{" "}
       </h1>
     );
-  return resturent.length === 0 ? (
+  return resturentData.length === 0 ? (
     <ShimerResturentCard />
   ) : (
     <div className="main-conatiner">
-      <div className="seach-container">
+      {/* <div className="seach-container">
         <input
           className="seach-input"
           type="text"
@@ -43,19 +47,15 @@ const Body = () => {
         <button name="Seach" type="button" onClick={() => seachHandle()}>
           Seach
         </button>
-      </div>
-      <div className="resturent-cantainer">
-        {resturent &&
-          resturent.map((item) => (
-            <Link key={item?.info?.id} to={"resturent/" + item?.info?.id}>
-              {item?.info?.avgRating > 4.5 ? (
-                <RecomendedCard data={item?.info} />
-              ) : (
-                <ResturentCard data={item?.info} />
-              )}
-            </Link>
-          ))}
-      </div>
+      </div> */}
+
+      {MenuList && <MenuWidgetList data={MenuList} />}
+      <div className="break"></div>
+
+      {TopResturent && <TopResturentList data={TopResturent} />}
+      <div className="break"></div>
+
+     {ResturentWithOnline && <OnlineResturent data={ResturentWithOnline}  />}
     </div>
   );
 };

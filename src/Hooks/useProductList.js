@@ -16,12 +16,11 @@ const useProductList =()=>{
         const result = await fetch(BASE_API_URL);
         const resultResponse = await result.json();
         const data =
-          resultResponse?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-            ?.restaurants;
+          resultResponse?.data?.cards;
         setResturentList(data);
         // console.log(data);
       };
-      return resturentList.length > 0 ? resturentList : []
+      return resturentList 
 }
 
 export default useProductList;

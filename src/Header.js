@@ -32,24 +32,24 @@ const Header = () => {
       <div className="nav-container">
         <ul className="nav-items no-bullets">
           <li>
-            <Link to={"/"}> Home</Link>
+            <Link to={"/"}> Swigy Corporate</Link>
           </li>
-          <li>Cart</li>
+          <li>Seach</li>
           <li>
             {" "}
-            <Link to={"/about"}>About</Link>
+            <Link to={"/about"}>Offer</Link>
           </li>
           <li>
-            <Link to={"/contact"}>Contact</Link>
+            <Link to={"/contact"}>Help</Link>
           </li>
-          <li>  <Link>{online ? "online":"offline"}</Link></li>
+          {/* <li>  <Link>{online ? "online":"offline"}</Link></li> */}
           <li>
           
             <button onClick={() => setSignIn(!isSignIn)} type="button">
               {isSignIn === true ? "SignIn" : "SignOut"}
             </button>
           </li>
-          <li>{loginUser}</li>
+          <li>{"Cart"}</li>
         </ul>
       </div>
     </div>
