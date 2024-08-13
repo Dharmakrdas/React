@@ -17,4 +17,7 @@ export const PRODUCT_DETAILS_API = (resturentId) => {
   return ressult;
 };
 
-export const DOWN_ARROW = "https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png";
+export const DOWN_ARROW =
+  "https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png";
+export const UP_ARROW =
+  "https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png";

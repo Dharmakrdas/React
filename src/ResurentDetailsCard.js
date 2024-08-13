@@ -4,14 +4,14 @@ const ResturentDetailsCard = ({ resturentCard }) => {
     return (
       <div className="resturent-details-container">
         <div className="border">
-        <div class="rating-container">
-          <img class="rating-img" alt="rounded-star.png" src={ROUNDED_STAR} />
+        <div className="rating-container">
+          <img className="rating-img" alt="rounded-star.png" src={ROUNDED_STAR} />
           <p className="resturent-text">
             {resturentCard?.avgRatingString}({resturentCard?.totalRatingsString}
             ) . {resturentCard?.costForTwoMessage}
           </p>
         </div>
-        <p class="cuisines-text">{resturentCard?.cuisines.join(", ")}</p>
+        <p className="cuisines-text">{resturentCard?.cuisines.join(", ")}</p>
         <p className="resturent-text">
           Outlet <p>{resturentCard?.areaName}</p>
         </p>
@@ -19,7 +19,7 @@ const ResturentDetailsCard = ({ resturentCard }) => {
           {resturentCard?.sla?.minDeliveryTime}-
           {resturentCard?.sla?.maxDeliveryTime} mins
         </p>
-        <p class="normal-text">{resturentCard?.feeDetails?.message}</p>
+        <p className="normal-text">{resturentCard?.feeDetails?.message}</p>
       </div>
       </div>
     );

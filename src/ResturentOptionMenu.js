@@ -1,10 +1,13 @@
-import { useState } from "react";
 import ProductList from "./ProductList";
-import { DOWN_ARROW } from "./utils/constant";
+import { DOWN_ARROW, UP_ARROW } from "./utils/constant";
 
-const ResturentOptionMenu = ({ data,isVisible ,setVisible ,index}) => {
-console.log("click item",isVisible);
+const ResturentOptionMenu = ({ data,isShowItems ,setVisible }) => {
+// console.log("click item",isShowItems);
+const handleCLick=()=>{
+  console.log("click item",isShowItems);
 
+  setVisible();
+}
     return (
       <div className="menu-container">
         <div className="menu-items">
@@ -12,13 +15,13 @@ console.log("click item",isVisible);
             {data?.title} ({data?.itemCards?.length})
           </p>
           <img
-          onClick={()=>setVisible(index)}
+          onClick={()=>handleCLick()}
             alt="down-arrow.png"
-            src={DOWN_ARROW}
+            src={ isShowItems ? DOWN_ARROW : UP_ARROW}
             className="down-arrow"
           ></img>
         </div>
-       {isVisible === true && ( <div className="product-list-container">
+       {isShowItems === true && ( <div className="product-list-container">
           {data?.itemCards.map((item) => (
             <ProductList key={item?.card?.info?.id} data={item?.card?.info} />
           ))}

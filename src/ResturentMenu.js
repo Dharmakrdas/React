@@ -7,21 +7,27 @@ import ShimemerProductDetails from "./Shimmer/ShimerProductDetails";
 import useResturentMenu from "./Hooks/useResturentMenu";
 
 const ResturentMenu = () => {
-  const [isVisible,setVisible] = useState(true);
+  const [isVisible, setVisible] = useState(0);
   const { resid } = useParams();
   const resurent = useResturentMenu(resid);
 
+  const ResturntMenu =
+    resurent[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+      (item) =>
+        item?.card?.card["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+    );
+  // console.log("filter Item", ResturntMenu);
+// console.log("resturent menu",resurent);
 
-  const handleClick=(id)=>{
-console.log("item click", id);
-// const data = [...resurent];
-// const result = resurent[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.find((item,index)=> index === id)
-// result[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.isVisible = !isVisible
-// setResturent(data);
+  const handleClick = (id) => {
+    console.log("item click", id);
+    setVisible(id);
+  };
 
-  }
-
-  return resurent.length === 0 ? <ShimemerProductDetails /> : (
+  return resurent.length === 0 ? (
+    <ShimemerProductDetails />
+  ) : (
     <div className="resturnt-menu-container">
       <p className="heading-text">{resurent[2]?.card?.card?.info?.name}</p>
       <ResturentDetailsCard resturentCard={resurent[2]?.card?.card?.info} />
@@ -29,21 +35,19 @@ console.log("item click", id);
       <div className="offer-container white-background">
         {resurent[3]?.card?.card?.gridElements?.infoWithStyle?.offers.map(
           (item) => (
-            <ResturentOffer key={item?.info?.header} data={item} />
+            <ResturentOffer key={item?.info?.offerIds[0]} data={item} />
           )
         )}
       </div>
-      {resurent[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.map((item,index) =>
-        item?.card?.card?.itemCards != undefined ? (
-          <ResturentOptionMenu
-            key={item?.card?.card?.title}
-            data={item?.card?.card}
-            isVisible={isVisible}
-            setVisible={handleClick}
-            index={index}
-          />
-        ) : null
-      )}
+      {ResturntMenu.map((item, index) => (
+        <ResturentOptionMenu
+          key={item?.card?.card?.title}
+          data={item?.card?.card}
+          isShowItems={index === isVisible ? true : false}
+          setVisible={()=>handleClick(index)}
+          index={index}
+        />
+      ))}
     </div>
   );
 };

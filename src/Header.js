@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { APP_LOGO } from "./utils/constant";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "./Hooks/useOnlineStatus";
+import UserContext from "./utils/UserContext";
 
 const Header = () => {
   const [isSignIn, setSignIn] = useState(true);
   const [count, setCount] = useState(1);
 
+  const { loginUser} = useContext(UserContext);
   const online = useOnlineStatus();
   /**
    * 1 > after initial render useEffect will call
@@ -47,6 +49,7 @@ const Header = () => {
               {isSignIn === true ? "SignIn" : "SignOut"}
             </button>
           </li>
+          <li>{loginUser}</li>
         </ul>
       </div>
     </div>

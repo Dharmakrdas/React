@@ -1,4 +1,4 @@
-import ResturentCard,{peopleChoice} from "./ResturentCard";
+import ResturentCard, { peopleChoice } from "./ResturentCard";
 import useProductList from "./Hooks/useProductList";
 import ShimerResturentCard from "./utils/ShimerResturentCard";
 import { useEffect, useState } from "react";
@@ -9,7 +9,7 @@ const Body = () => {
   const resturent = useProductList();
 
   const RecomendedCard = peopleChoice(ResturentCard);
-  
+
   const [searchText, setSearchText] = useState("");
   const [resturentList, setResturentList] = useState(resturent);
   const online = useOnlineStatus();
@@ -21,7 +21,13 @@ const Body = () => {
     const res = data.filter((item) => item.info.name.includes(searchText));
     console.log(res);
   };
-if(!online) return (<h1>Looks like your connection is offline when you back i will be show your detials </h1> )
+  if (!online)
+    return (
+      <h1>
+        Looks like your connection is offline when you back i will be show your
+        detials{" "}
+      </h1>
+    );
   return resturent.length === 0 ? (
     <ShimerResturentCard />
   ) : (
@@ -42,7 +48,11 @@ if(!online) return (<h1>Looks like your connection is offline when you back i wi
         {resturent &&
           resturent.map((item) => (
             <Link key={item?.info?.id} to={"resturent/" + item?.info?.id}>
-             { item?.info?.avgRating > 4.5 ? <RecomendedCard data={item?.info} /> :  <ResturentCard data={item?.info} />}
+              {item?.info?.avgRating > 4.5 ? (
+                <RecomendedCard data={item?.info} />
+              ) : (
+                <ResturentCard data={item?.info} />
+              )}
             </Link>
           ))}
       </div>
