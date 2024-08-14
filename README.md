@@ -18,3 +18,10 @@
  - Tree Shacking
  - Different dev & prod bundles
 
+# Redux
+ - install @redux/toolkit and react-redux 
+ - create our store
+ - provide our store to gloable
+ - dispact action
+ - invoke reducer function
+ - subscribe our store

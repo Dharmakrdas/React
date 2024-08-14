@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import ResturentCard, { peopleChoice } from "./ResturentCard";
 
-const OnlineResturent = ({ data }) => {
+const OnlineResturent = ({ data, header_txt }) => {
   const RecomendedCard = peopleChoice(ResturentCard);
 
   return (
     <div>
       <p className="bold-heading">
-        {"Resturent with online food delivery in Bangalore"}
+        {header_txt}
       </p>
       <div className="resturent-cantainer">
         {data &&

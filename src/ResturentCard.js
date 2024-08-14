@@ -19,7 +19,7 @@ const ResturentCard = ({ data }) => {
         </div>
         <p className="normal-text">{data?.cuisines.join(", ")}</p>
         <p className="normal-text">{data?.areaName}</p>
-        <p className="normal-text">{loginUser}</p>
+        {/* <p className="normal-text">{loginUser}</p> */}
       </div>
     </div>
   );

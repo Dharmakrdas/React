@@ -3,11 +3,14 @@ import { PRODUCT_IMAGE, ROUNDED_STAR } from "./utils/constant";
 const TopResturentCard = ({ data }) => {
   return (
     <div className="top-resturent-card">
-      <img
-        className="product-img"
-        alt="product-img"
-        src={PRODUCT_IMAGE(data?.cloudinaryImageId)}
-      ></img>
+      <div className="image">
+          <img
+            className="top-product-img"
+            alt="product-img"
+            src={PRODUCT_IMAGE(data?.cloudinaryImageId)}
+          />
+        <div className="image__text">{data?.aggregatedDiscountInfoV3?.header} {data?.aggregatedDiscountInfoV3?.subHeader}</div>
+      </div>
       <div className="product-details">
         <p className="product-name">{data?.name}</p>
         <div className="rating-container">

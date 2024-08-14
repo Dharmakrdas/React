@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { PRODUCT_IMAGE } from "./utils/constant";
 
 const MenuWidgetList = ({ data }) => {
@@ -6,13 +7,13 @@ const MenuWidgetList = ({ data }) => {
       <p className="bold-heading">{data?.header?.title}</p>
       <div className="offer-container">
         {data?.imageGridCards?.info.map((item) => (
-          <div key={item?.id}>
+          <Link to={"/productlist/"+item?.action?.link} key={item?.id}>
             <img
               alt="widget-img.png"
               className="widget-img"
               src={PRODUCT_IMAGE(item?.imageId)}
             />
-          </div>
+          </Link>
         ))}
       </div>
     </div>

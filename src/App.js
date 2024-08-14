@@ -7,6 +7,7 @@ import ErrorPage from "./Error";
 import ResturentMenu from "./ResturentMenu";
 import UserContext from "./utils/UserContext";
 import { useEffect, useState } from "react";
+import ProductByCatagory from "./ProductByCatagory";
 
 const App = () => {
   const [userName, setUserName] = useState(null);
@@ -48,6 +49,10 @@ const routes = createBrowserRouter([
         path: "resturent/:resid",
         element: <ResturentMenu />,
       },
+      {
+        path:"/:category",
+        element: <ProductByCatagory />
+      }
     ],
   },
 ]);

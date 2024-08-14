@@ -15,7 +15,7 @@ const Body = () => {
   // console.log(MenuList);
 
   const ResturentWithOnline =
-    resturentData[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    resturentData[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
   const TopResturent = resturentData[1]?.card?.card;
 
   const seachHandle = () => {
@@ -55,7 +55,7 @@ const Body = () => {
       {TopResturent && <TopResturentList data={TopResturent} />}
       <div className="break"></div>
 
-     {ResturentWithOnline && <OnlineResturent data={ResturentWithOnline}  />}
+     {ResturentWithOnline && <OnlineResturent data={ResturentWithOnline} header_txt={resturentData[2]?.card?.card?.title} />}
     </div>
   );
 };
