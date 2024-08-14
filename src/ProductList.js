@@ -1,6 +1,12 @@
+import { useDispatch } from "react-redux";
 import { PRODUCT_IMAGE, ROUNDED_STAR } from "./utils/constant";
+import { addItem } from "./redux/slice/cartSlice";
 
 const ProductList = ({ data }) => {
+  const dispatch = useDispatch();
+  const handleItem =(data)=>{
+        dispatch(addItem(data));
+  }
   return (
     <div className="menu-items white-background">
       <div className="product-list-container">
@@ -29,7 +35,7 @@ const ProductList = ({ data }) => {
           className="menu-item-img"
           src={PRODUCT_IMAGE(data?.imageId)}
         ></img>
-        <button className="btn" type="button">
+        <button onClick={()=>handleItem(data)} className="btn" type="button">
           ADD
         </button>
       </div>

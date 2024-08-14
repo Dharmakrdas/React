@@ -3,10 +3,13 @@ import { APP_LOGO } from "./utils/constant";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "./Hooks/useOnlineStatus";
 import UserContext from "./utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [isSignIn, setSignIn] = useState(true);
   const [count, setCount] = useState(1);
+const cartItems = useSelector((state)=>state.cart.items)
+console.log("cart items",cartItems);
 
   const { loginUser} = useContext(UserContext);
   const online = useOnlineStatus();
@@ -25,7 +28,7 @@ const Header = () => {
     console.log(count);
   };
   return (
-    <div className="header-container">
+    <header className="header-container">
       <div className="logo-container">
         <img className="logo" src={APP_LOGO} alt="logo.png"></img>
       </div>
@@ -49,10 +52,10 @@ const Header = () => {
               {isSignIn === true ? "SignIn" : "SignOut"}
             </button>
           </li>
-          <li>{"Cart"}</li>
+          <li><div className="menu-items"><div className="cart-items">{cartItems.length}</div>{"Cart"} </div></li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
 export default Header;

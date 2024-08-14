@@ -8,6 +8,8 @@ import ResturentMenu from "./ResturentMenu";
 import UserContext from "./utils/UserContext";
 import { useEffect, useState } from "react";
 import ProductByCatagory from "./ProductByCatagory";
+import { Provider } from "react-redux";
+import appStore from "./redux/appStore";
 
 const App = () => {
   const [userName, setUserName] = useState(null);
@@ -19,10 +21,12 @@ const App = () => {
   }, []);
   return (
     <>
+    <Provider store={appStore}>
       <UserContext.Provider value={{ loginUser: userName, setUserName }}>
         <Header />
         <Outlet />
       </UserContext.Provider>
+      </Provider>
     </>
   );
 };
