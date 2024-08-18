@@ -10,6 +10,8 @@ import { useEffect, useState } from "react";
 import ProductByCatagory from "./ProductByCatagory";
 import { Provider } from "react-redux";
 import appStore from "./redux/appStore";
+import CartPage from "./Cart";
+
 
 const App = () => {
   const [userName, setUserName] = useState(null);
@@ -52,6 +54,9 @@ const routes = createBrowserRouter([
       {
         path: "resturent/:resid",
         element: <ResturentMenu />,
+      },
+      {path:"cart",
+        element:<CartPage />
       },
       {
         path:"/:category",

@@ -3,19 +3,31 @@ import { PRODUCT_IMAGE, ROUNDED_STAR } from "./utils/constant";
 import UserContext from "./utils/UserContext";
 
 const ResturentCard = ({ data }) => {
-  const {loginUser} = useContext(UserContext);
+  const { loginUser } = useContext(UserContext);
   return (
     <div className="resturent-card">
-      <img
-        className="product-img"
-        alt="product-img"
-        src={PRODUCT_IMAGE(data?.cloudinaryImageId)}
-      ></img>
+      <div className="image">
+        <img
+          className="product-img"
+          alt="product-img"
+          src={PRODUCT_IMAGE(data?.cloudinaryImageId)}
+        ></img>
+        <div className="image__text">
+          {data?.aggregatedDiscountInfoV3?.header}{" "}
+          {data?.aggregatedDiscountInfoV3?.subHeader}
+        </div>
+      </div>
       <div className="product-details">
         <p className="product-name">{data?.name}</p>
         <div className="rating-container">
-          <img className="rating-img" alt="rounded-star.png" src={ROUNDED_STAR} />
-          <p>{data?.avgRatingString} . {data?.sla?.slaString}</p>
+          <img
+            className="rating-img"
+            alt="rounded-star.png"
+            src={ROUNDED_STAR}
+          />
+          <p>
+            {data?.avgRatingString} . {data?.sla?.slaString}
+          </p>
         </div>
         <p className="normal-text">{data?.cuisines.join(", ")}</p>
         <p className="normal-text">{data?.areaName}</p>
@@ -25,15 +37,14 @@ const ResturentCard = ({ data }) => {
   );
 };
 
-export const peopleChoice =(ResturentCard)=>{
-  return (props)=>{
+export const peopleChoice = (ResturentCard) => {
+  return (props) => {
     return (
       <div>
         <label className="recomended-label">People Choice</label>
         <ResturentCard {...props} />
       </div>
-    )
-  }
-}
+    );
+  };
+};
 export default ResturentCard;
-

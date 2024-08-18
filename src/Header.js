@@ -8,10 +8,10 @@ import { useSelector } from "react-redux";
 const Header = () => {
   const [isSignIn, setSignIn] = useState(true);
   const [count, setCount] = useState(1);
-const cartItems = useSelector((state)=>state.cart.items)
-console.log("cart items",cartItems);
+  const cartItems = useSelector((state) => state.cart.items);
+  console.log("cart items", cartItems);
 
-  const { loginUser} = useContext(UserContext);
+  const { loginUser } = useContext(UserContext);
   const online = useOnlineStatus();
   /**
    * 1 > after initial render useEffect will call
@@ -28,7 +28,7 @@ console.log("cart items",cartItems);
     console.log(count);
   };
   return (
-    <header className="header-container">
+    <header className="header-container header" id="myHeader">
       <div className="logo-container">
         <img className="logo" src={APP_LOGO} alt="logo.png"></img>
       </div>
@@ -47,12 +47,20 @@ console.log("cart items",cartItems);
           </li>
           {/* <li>  <Link>{online ? "online":"offline"}</Link></li> */}
           <li>
-          
             <button onClick={() => setSignIn(!isSignIn)} type="button">
               {isSignIn === true ? "SignIn" : "SignOut"}
             </button>
           </li>
-          <li><div className="menu-items"><div className="cart-items">{cartItems.length}</div>{"Cart"} </div></li>
+          <li>
+            <Link to={"/cart"}>
+            <div className="menu-items">
+              {cartItems.length === 0 ? null : (
+                <div className="cart-items">{cartItems.length}</div>
+              )}
+              {"Cart"}
+            </div>
+            </Link>
+          </li>
         </ul>
       </div>
     </header>

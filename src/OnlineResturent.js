@@ -9,7 +9,8 @@ const OnlineResturent = ({ data, header_txt }) => {
       <p className="bold-heading">
         {header_txt}
       </p>
-      <div className="resturent-cantainer">
+      {/* <div className="resturent-cantainer"> */}
+      <div className="grid-container">
         {data &&
           data.map((item) => (
             <Link key={item?.info?.id} to={"resturent/" + item?.info?.id}>

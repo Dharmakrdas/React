@@ -11,7 +11,15 @@ const ShimerCard = () => {
 };
 const ShimerResturentCard = () => {
   return (
+    <div className="main-shimer-container">
+       <div
+      className="looking-shimer"
+      >
+        <h1 className=" bold-heading looking-text">Looking for great food near you</h1>
+      </div>
+    
     <div className="shimer-container">
+     
       <ShimerCard />
       <ShimerCard />
       <ShimerCard />
@@ -23,6 +31,7 @@ const ShimerResturentCard = () => {
       <ShimerCard />
       <ShimerCard />
       <ShimerCard />
+    </div>
     </div>
   );
 };
