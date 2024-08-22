@@ -1,0 +1,251 @@
+{
+    "statusCode": 0,
+    "data": {
+        "query": "kfc",
+        "highlightPreText": "{{",
+        "highlightPostText": "}}",
+        "suggestions": [
+            {
+                "text": "KFC",
+                "highlightedText": "{{KFC}}",
+                "type": "RESTAURANT",
+                "suggestionType": "SUGGESTION_TYPE_LOW_CONFIDENCE",
+                "marketplace": {
+                    "marketplaceId": "SWIGGY",
+                    "businessLineId": "FOOD"
+                },
+                "tagToDisplay": "Restaurant",
+                "tagToDisplayColor": "#686B78",
+                "cloudinaryId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/283329f9-5ad8-4c46-9177-6b23b6eb2966_17297.JPG",
+                "metadata": "{\"type\":\"RESTAURANT\",\"data\":{\"parentId\":547,\"primaryRestaurantId\":17297,\"cloudinaryId\":\"RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/283329f9-5ad8-4c46-9177-6b23b6eb2966_17297.JPG\",\"brandId\":547,\"dishFamilyId\":\"846649\",\"enabled_flag\":1},\"businessCategory\":\"SWIGGY_FOOD\",\"displayLabel\":\"Restaurant\"}",
+                "cta": {
+                    "text": "KFC",
+                    "type": "DEEPLINK",
+                    "link": "swiggy://explore?query=KFC&metadata=%7B%22type%22%3A%22RESTAURANT%22%2C%22data%22%3A%7B%22parentId%22%3A547%2C%22primaryRestaurantId%22%3A17297%2C%22cloudinaryId%22%3A%22RX_THUMBNAIL%2FIMAGES%2FVENDOR%2F2024%2F4%2F17%2F283329f9-5ad8-4c46-9177-6b23b6eb2966_17297.JPG%22%2C%22brandId%22%3A547%2C%22dishFamilyId%22%3A%22846649%22%2C%22enabled_flag%22%3A1%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Restaurant%22%7D&marketplace=%7B%22marketplaceId%22%3A%22SWIGGY%22%2C%22businessLineId%22%3A%22FOOD%22%7D"
+                },
+                "category": "Food",
+                "categoryColor": "#686B78",
+                "subCategory": "Restaurant",
+                "subCategoryColor": "#686B78",
+                "restaurantId": 0,
+                "disabled": false
+            },
+            {
+                "text": "Kfc Fried Chicken",
+                "highlightedText": "{{Kfc}} Fried Chicken",
+                "type": "DISH",
+                "suggestionType": "SUGGESTION_TYPE_LOW_CONFIDENCE",
+                "marketplace": {
+                    "marketplaceId": "SWIGGY",
+                    "businessLineId": "FOOD"
+                },
+                "tagToDisplay": "Dish",
+                "cloudinaryId": "FOOD_CATALOG/IMAGES/CMS/2024/5/29/49353d99-431a-4bb8-b9f9-5dec00b6aa18_e69c76da-29fd-4480-88de-ec3d0555edb6.JPG",
+                "tagToDisplayColor": "#686B78",
+                "metadata": "{\"type\":\"DISH\",\"data\":{\"vegIdentifier\":\"NONVEG\",\"cloudinaryId\":\"FOOD_CATALOG/IMAGES/CMS/2024/5/29/49353d99-431a-4bb8-b9f9-5dec00b6aa18_e69c76da-29fd-4480-88de-ec3d0555edb6.JPG\"},\"businessCategory\":\"SWIGGY_FOOD\",\"displayLabel\":\"Dish\"}",
+                "cta": {
+                    "text": "Kfc Fried Chicken",
+                    "type": "DEEPLINK",
+                    "link": "swiggy://explore?query=Kfc%20Fried%20Chicken&metadata=%7B%22type%22%3A%22DISH%22%2C%22data%22%3A%7B%22vegIdentifier%22%3A%22NONVEG%22%2C%22cloudinaryId%22%3A%22FOOD_CATALOG%2FIMAGES%2FCMS%2F2024%2F5%2F29%2F49353d99-431a-4bb8-b9f9-5dec00b6aa18_e69c76da-29fd-4480-88de-ec3d0555edb6.JPG%22%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Dish%22%7D&marketplace=%7B%22marketplaceId%22%3A%22SWIGGY%22%2C%22businessLineId%22%3A%22FOOD%22%7D"
+                },
+                "category": "Food",
+                "categoryColor": "#686B78",
+                "subCategory": "Dish",
+                "subCategoryColor": "#686B78"
+            },
+            {
+                "text": "Classic Kfc Meal",
+                "highlightedText": "Classic {{Kfc}} Meal",
+                "type": "DISH",
+                "suggestionType": "SUGGESTION_TYPE_LOW_CONFIDENCE",
+                "marketplace": {
+                    "marketplaceId": "SWIGGY",
+                    "businessLineId": "FOOD"
+                },
+                "tagToDisplay": "Dish",
+                "cloudinaryId": "Icons-Autosuggest/AS_Dish_3x",
+                "tagToDisplayColor": "#686B78",
+                "metadata": "{\"type\":\"DISH\",\"data\":{\"vegIdentifier\":\"NONVEG\",\"dishFamilyId\":\"846649\",\"dishFamilyIds\":[\"846649\"]},\"businessCategory\":\"SWIGGY_FOOD\",\"displayLabel\":\"Dish\"}",
+                "cta": {
+                    "text": "Classic Kfc Meal",
+                    "type": "DEEPLINK",
+                    "link": "swiggy://explore?query=Classic%20Kfc%20Meal&metadata=%7B%22type%22%3A%22DISH%22%2C%22data%22%3A%7B%22vegIdentifier%22%3A%22NONVEG%22%2C%22dishFamilyId%22%3A%22846649%22%2C%22dishFamilyIds%22%3A%5B%22846649%22%5D%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Dish%22%7D&marketplace=%7B%22marketplaceId%22%3A%22SWIGGY%22%2C%22businessLineId%22%3A%22FOOD%22%7D"
+                },
+                "category": "Food",
+                "categoryColor": "#686B78",
+                "subCategory": "Dish",
+                "subCategoryColor": "#686B78"
+            },
+            {
+                "text": "Kota Kachori And Falahaar",
+                "highlightedText": "Kota Kachori And Falahaar",
+                "type": "RESTAURANT",
+                "suggestionType": "SUGGESTION_TYPE_LOW_CONFIDENCE",
+                "marketplace": {
+                    "marketplaceId": "SWIGGY",
+                    "businessLineId": "FOOD"
+                },
+                "tagToDisplay": "Restaurant",
+                "tagToDisplayColor": "#686B78",
+                "cloudinaryId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/7/26/52e93991-68bd-4b98-a826-ec3542cb7684_2072.jpg",
+                "metadata": "{\"type\":\"RESTAURANT\",\"data\":{\"parentId\":373582,\"primaryRestaurantId\":2072,\"cloudinaryId\":\"RX_THUMBNAIL/IMAGES/VENDOR/2024/7/26/52e93991-68bd-4b98-a826-ec3542cb7684_2072.jpg\",\"brandId\":373582,\"dishFamilyId\":\"846534\",\"enabled_flag\":1},\"businessCategory\":\"SWIGGY_FOOD\",\"displayLabel\":\"Restaurant\"}",
+                "cta": {
+                    "text": "Kota Kachori And Falahaar",
+                    "type": "DEEPLINK",
+                    "link": "swiggy://explore?query=Kota%20Kachori%20And%20Falahaar&metadata=%7B%22type%22%3A%22RESTAURANT%22%2C%22data%22%3A%7B%22parentId%22%3A373582%2C%22primaryRestaurantId%22%3A2072%2C%22cloudinaryId%22%3A%22RX_THUMBNAIL%2FIMAGES%2FVENDOR%2F2024%2F7%2F26%2F52e93991-68bd-4b98-a826-ec3542cb7684_2072.jpg%22%2C%22brandId%22%3A373582%2C%22dishFamilyId%22%3A%22846534%22%2C%22enabled_flag%22%3A1%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Restaurant%22%7D&marketplace=%7B%22marketplaceId%22%3A%22SWIGGY%22%2C%22businessLineId%22%3A%22FOOD%22%7D"
+                },
+                "category": "Food",
+                "categoryColor": "#686B78",
+                "subCategory": "Restaurant",
+                "subCategoryColor": "#686B78",
+                "restaurantId": 0,
+                "disabled": false
+            },
+            {
+                "text": "Kachori",
+                "highlightedText": "Kachori",
+                "type": "DISH",
+                "suggestionType": "SUGGESTION_TYPE_LOW_CONFIDENCE",
+                "marketplace": {
+                    "marketplaceId": "SWIGGY",
+                    "businessLineId": "FOOD"
+                },
+                "tagToDisplay": "Dish",
+                "cloudinaryId": "kt1fgxm7cbsluvjjq8ik",
+                "tagToDisplayColor": "#686B78",
+                "metadata": "{\"type\":\"DISH\",\"data\":{\"vegIdentifier\":\"NA\",\"cloudinaryId\":\"kt1fgxm7cbsluvjjq8ik\",\"dishFamilyId\":\"846534\",\"dishFamilyIds\":[\"846534\"]},\"businessCategory\":\"SWIGGY_FOOD\",\"displayLabel\":\"Dish\"}",
+                "cta": {
+                    "text": "Kachori",
+                    "type": "DEEPLINK",
+                    "link": "swiggy://explore?query=Kachori&metadata=%7B%22type%22%3A%22DISH%22%2C%22data%22%3A%7B%22vegIdentifier%22%3A%22NA%22%2C%22cloudinaryId%22%3A%22kt1fgxm7cbsluvjjq8ik%22%2C%22dishFamilyId%22%3A%22846534%22%2C%22dishFamilyIds%22%3A%5B%22846534%22%5D%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Dish%22%7D&marketplace=%7B%22marketplaceId%22%3A%22SWIGGY%22%2C%22businessLineId%22%3A%22FOOD%22%7D"
+                },
+                "category": "Food",
+                "categoryColor": "#686B78",
+                "subCategory": "Dish",
+                "subCategoryColor": "#686B78"
+            },
+            {
+                "text": "Kota Kachori",
+                "highlightedText": "Kota Kachori",
+                "type": "DISH",
+                "suggestionType": "SUGGESTION_TYPE_LOW_CONFIDENCE",
+                "marketplace": {
+                    "marketplaceId": "SWIGGY",
+                    "businessLineId": "FOOD"
+                },
+                "tagToDisplay": "Dish",
+                "cloudinaryId": "l9aztzo8k5oulruroylv",
+                "tagToDisplayColor": "#686B78",
+                "metadata": "{\"type\":\"DISH\",\"data\":{\"vegIdentifier\":\"NA\",\"cloudinaryId\":\"l9aztzo8k5oulruroylv\",\"dishFamilyId\":\"846534\",\"dishFamilyIds\":[\"846534\"],\"dishPreparationStyleIds\":[\"848715\"]},\"businessCategory\":\"SWIGGY_FOOD\",\"displayLabel\":\"Dish\"}",
+                "cta": {
+                    "text": "Kota Kachori",
+                    "type": "DEEPLINK",
+                    "link": "swiggy://explore?query=Kota%20Kachori&metadata=%7B%22type%22%3A%22DISH%22%2C%22data%22%3A%7B%22vegIdentifier%22%3A%22NA%22%2C%22cloudinaryId%22%3A%22l9aztzo8k5oulruroylv%22%2C%22dishFamilyId%22%3A%22846534%22%2C%22dishFamilyIds%22%3A%5B%22846534%22%5D%2C%22dishPreparationStyleIds%22%3A%5B%22848715%22%5D%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Dish%22%7D&marketplace=%7B%22marketplaceId%22%3A%22SWIGGY%22%2C%22businessLineId%22%3A%22FOOD%22%7D"
+                },
+                "category": "Food",
+                "categoryColor": "#686B78",
+                "subCategory": "Dish",
+                "subCategoryColor": "#686B78"
+            },
+            {
+                "text": "Raj Kachori",
+                "highlightedText": "Raj Kachori",
+                "type": "DISH",
+                "suggestionType": "SUGGESTION_TYPE_LOW_CONFIDENCE",
+                "marketplace": {
+                    "marketplaceId": "SWIGGY",
+                    "businessLineId": "FOOD"
+                },
+                "tagToDisplay": "Dish",
+                "cloudinaryId": "dcvd6gaieqo4hyatoawt",
+                "tagToDisplayColor": "#686B78",
+                "metadata": "{\"type\":\"DISH\",\"data\":{\"vegIdentifier\":\"NA\",\"cloudinaryId\":\"dcvd6gaieqo4hyatoawt\",\"dishFamilyId\":\"846534\",\"dishFamilyIds\":[\"846534\"],\"dishPreparationStyleIds\":[\"848712\"]},\"businessCategory\":\"SWIGGY_FOOD\",\"displayLabel\":\"Dish\"}",
+                "cta": {
+                    "text": "Raj Kachori",
+                    "type": "DEEPLINK",
+                    "link": "swiggy://explore?query=Raj%20Kachori&metadata=%7B%22type%22%3A%22DISH%22%2C%22data%22%3A%7B%22vegIdentifier%22%3A%22NA%22%2C%22cloudinaryId%22%3A%22dcvd6gaieqo4hyatoawt%22%2C%22dishFamilyId%22%3A%22846534%22%2C%22dishFamilyIds%22%3A%5B%22846534%22%5D%2C%22dishPreparationStyleIds%22%3A%5B%22848712%22%5D%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Dish%22%7D&marketplace=%7B%22marketplaceId%22%3A%22SWIGGY%22%2C%22businessLineId%22%3A%22FOOD%22%7D"
+                },
+                "category": "Food",
+                "categoryColor": "#686B78",
+                "subCategory": "Dish",
+                "subCategoryColor": "#686B78"
+            },
+            {
+                "text": "Club Kachori",
+                "highlightedText": "Club Kachori",
+                "type": "DISH",
+                "suggestionType": "SUGGESTION_TYPE_LOW_CONFIDENCE",
+                "marketplace": {
+                    "marketplaceId": "SWIGGY",
+                    "businessLineId": "FOOD"
+                },
+                "tagToDisplay": "Dish",
+                "cloudinaryId": "vv0f7mxirmzddqphmcsm",
+                "tagToDisplayColor": "#686B78",
+                "metadata": "{\"type\":\"DISH\",\"data\":{\"vegIdentifier\":\"NA\",\"cloudinaryId\":\"vv0f7mxirmzddqphmcsm\",\"dishFamilyId\":\"846534\",\"dishFamilyIds\":[\"846534\"],\"dishPreparationStyleIds\":[\"848705\"]},\"businessCategory\":\"SWIGGY_FOOD\",\"displayLabel\":\"Dish\"}",
+                "cta": {
+                    "text": "Club Kachori",
+                    "type": "DEEPLINK",
+                    "link": "swiggy://explore?query=Club%20Kachori&metadata=%7B%22type%22%3A%22DISH%22%2C%22data%22%3A%7B%22vegIdentifier%22%3A%22NA%22%2C%22cloudinaryId%22%3A%22vv0f7mxirmzddqphmcsm%22%2C%22dishFamilyId%22%3A%22846534%22%2C%22dishFamilyIds%22%3A%5B%22846534%22%5D%2C%22dishPreparationStyleIds%22%3A%5B%22848705%22%5D%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Dish%22%7D&marketplace=%7B%22marketplaceId%22%3A%22SWIGGY%22%2C%22businessLineId%22%3A%22FOOD%22%7D"
+                },
+                "category": "Food",
+                "categoryColor": "#686B78",
+                "subCategory": "Dish",
+                "subCategoryColor": "#686B78"
+            },
+            {
+                "text": "K C Das",
+                "highlightedText": "K C Das",
+                "type": "RESTAURANT",
+                "suggestionType": "SUGGESTION_TYPE_LOW_CONFIDENCE",
+                "marketplace": {
+                    "marketplaceId": "SWIGGY",
+                    "businessLineId": "FOOD"
+                },
+                "tagToDisplay": "Restaurant",
+                "tagToDisplayColor": "#686B78",
+                "cloudinaryId": "pyf1bduaaxxlahonki69",
+                "metadata": "{\"type\":\"RESTAURANT\",\"data\":{\"parentId\":406001,\"primaryRestaurantId\":56308,\"cloudinaryId\":\"pyf1bduaaxxlahonki69\",\"brandId\":406001,\"dishFamilyId\":\"a66d3cc2-c876-4bd2-aead-ee9b2527a678\",\"enabled_flag\":1},\"businessCategory\":\"SWIGGY_FOOD\",\"displayLabel\":\"Restaurant\"}",
+                "cta": {
+                    "text": "K C Das",
+                    "type": "DEEPLINK",
+                    "link": "swiggy://explore?query=K%20C%20Das&metadata=%7B%22type%22%3A%22RESTAURANT%22%2C%22data%22%3A%7B%22parentId%22%3A406001%2C%22primaryRestaurantId%22%3A56308%2C%22cloudinaryId%22%3A%22pyf1bduaaxxlahonki69%22%2C%22brandId%22%3A406001%2C%22dishFamilyId%22%3A%22a66d3cc2-c876-4bd2-aead-ee9b2527a678%22%2C%22enabled_flag%22%3A1%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Restaurant%22%7D&marketplace=%7B%22marketplaceId%22%3A%22SWIGGY%22%2C%22businessLineId%22%3A%22FOOD%22%7D"
+                },
+                "category": "Food",
+                "categoryColor": "#686B78",
+                "subCategory": "Restaurant",
+                "subCategoryColor": "#686B78",
+                "restaurantId": 0,
+                "disabled": false
+            },
+            {
+                "text": "Dal Kachori",
+                "highlightedText": "Dal Kachori",
+                "type": "DISH",
+                "suggestionType": "SUGGESTION_TYPE_LOW_CONFIDENCE",
+                "marketplace": {
+                    "marketplaceId": "SWIGGY",
+                    "businessLineId": "FOOD"
+                },
+                "tagToDisplay": "Dish",
+                "cloudinaryId": "yalhzwxppvsbnzpjfdlw",
+                "tagToDisplayColor": "#686B78",
+                "metadata": "{\"type\":\"DISH\",\"data\":{\"vegIdentifier\":\"VEG\",\"cloudinaryId\":\"yalhzwxppvsbnzpjfdlw\",\"dishFamilyId\":\"846534\",\"dishFamilyIds\":[\"846534\"],\"dishTypeIds\":[\"d2511fd9-213d-4275-a695-983308b8f13d\"]},\"businessCategory\":\"SWIGGY_FOOD\",\"displayLabel\":\"Dish\"}",
+                "cta": {
+                    "text": "Dal Kachori",
+                    "type": "DEEPLINK",
+                    "link": "swiggy://explore?query=Dal%20Kachori&metadata=%7B%22type%22%3A%22DISH%22%2C%22data%22%3A%7B%22vegIdentifier%22%3A%22VEG%22%2C%22cloudinaryId%22%3A%22yalhzwxppvsbnzpjfdlw%22%2C%22dishFamilyId%22%3A%22846534%22%2C%22dishFamilyIds%22%3A%5B%22846534%22%5D%2C%22dishTypeIds%22%3A%5B%22d2511fd9-213d-4275-a695-983308b8f13d%22%5D%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Dish%22%7D&marketplace=%7B%22marketplaceId%22%3A%22SWIGGY%22%2C%22businessLineId%22%3A%22FOOD%22%7D"
+                },
+                "category": "Food",
+                "categoryColor": "#686B78",
+                "subCategory": "Dish",
+                "subCategoryColor": "#686B78"
+            }
+        ],
+        "userIntent": "DEFAULT"
+    },
+    "tid": "",
+    "sid": "",
+    "deviceId": "42d98a32-0f41-511e-c355-c078e4ae602c",
+    "csrfToken": "jCCxfDWaKNNi-izdtDyKTJj-WuhR1-ULqRc59faE"
+}

@@ -9,7 +9,7 @@ const Header = () => {
   const [isSignIn, setSignIn] = useState(true);
   const [count, setCount] = useState(1);
   const cartItems = useSelector((state) => state.cart.items);
-  console.log("cart items", cartItems);
+  // console.log("cart items", cartItems);
 
   const { loginUser } = useContext(UserContext);
   const online = useOnlineStatus();
@@ -35,9 +35,9 @@ const Header = () => {
       <div className="nav-container">
         <ul className="nav-items no-bullets">
           <li>
-            <Link to={"/"}> Swigy Corporate</Link>
+            <Link to={"/"}>Swigy Corporate</Link>
           </li>
-          <li>Seach</li>
+          <li> <Link to={"/search"}>Search</Link> </li>
           <li>
             {" "}
             <Link to={"/about"}>Offer</Link>

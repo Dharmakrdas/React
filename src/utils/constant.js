@@ -16,13 +16,21 @@ export const PRODUCT_DETAILS_API = (resturentId) => {
   const ressult = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.96340&lng=77.58550&restaurantId=${resturentId}`;
   return ressult;
 };
- 
-export const TOPRESTURENTAPI =(res)=>{
-         const result =  `https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&collection=${res.id}&tags=layout_CCS_${res.name}&sortBy=&filters=&type=rcv2&offset=0&page_type=null`;
-         return result;
-}
+
+export const TOPRESTURENTAPI = (res) => {
+  const result = `https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&collection=${res.id}&tags=layout_CCS_${res.name}&sortBy=&filters=&type=rcv2&offset=0&page_type=null`;
+  return result;
+};
 
 export const DOWN_ARROW =
   "https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png";
 export const UP_ARROW =
   "https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png";
+
+export const polularCusines =
+  "https://www.swiggy.com/dapi/landing/PRE_SEARCH?lat=12.96340&lng=77.58550";
+
+export const searchApi = (text) => {
+  const result = `https://www.swiggy.com/dapi/restaurants/search/suggest?lat=12.96340&lng=77.58550&str=${text}`;
+  return result;
+};

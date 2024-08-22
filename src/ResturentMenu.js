@@ -18,7 +18,7 @@ const ResturentMenu = () => {
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
   // console.log("filter Item", ResturntMenu);
-// console.log("resturent menu",resurent);
+  // console.log("resturent menu",resurent);
 
   const handleClick = (id) => {
     console.log("item click", id);
@@ -44,7 +44,7 @@ const ResturentMenu = () => {
           key={item?.card?.card?.title}
           data={item?.card?.card}
           isShowItems={index === isVisible ? true : false}
-          setVisible={()=>handleClick(index)}
+          setVisible={() => handleClick(index)}
           index={index}
         />
       ))}

@@ -5,26 +5,27 @@ import useOnlineStatus from "./Hooks/useOnlineStatus";
 import MenuWidgetList from "./MenuWidgetList";
 import TopResturentList from "./TopResturentList";
 import OnlineResturent from "./OnlineResturent";
+import Footer from "./Footer";
+import AppLink from "./AppLink";
 
 const Body = () => {
   const resturentData = useProductList();
-
-  const [searchText, setSearchText] = useState("");
   const online = useOnlineStatus();
   const MenuList = resturentData[0]?.card?.card;
   // console.log(MenuList);
-
+  const TopResturent = resturentData[1]?.card?.card;
   const ResturentWithOnline =
     resturentData[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-  const TopResturent = resturentData[1]?.card?.card;
+  const cities = resturentData[10]?.card?.card?.cities;
+  // console.log("Cites",cities);
 
-  const seachHandle = () => {
-    const data = [...resturent];
-    console.log(searchText);
+  // const seachHandle = () => {
+  //   const data = [...resturent];
+  //   console.log(searchText);
 
-    const res = data.filter((item) => item.info.name.includes(searchText));
-    console.log(res);
-  };
+  //   const res = data.filter((item) => item.info.name.includes(searchText));
+  //   console.log(res);
+  // };
   if (!online)
     return (
       <h1>
@@ -35,27 +36,23 @@ const Body = () => {
   return resturentData.length === 0 ? (
     <ShimerResturentCard />
   ) : (
-    <div className="main-conatiner">
-      {/* <div className="seach-container">
-        <input
-          className="seach-input"
-          type="text"
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-          placeholder="Seach Product"
-        ></input>
-        <button name="Seach" type="button" onClick={() => seachHandle()}>
-          Seach
-        </button>
-      </div> */}
+    <div className="body-conatiner">
+      <div className="main-conatiner">
+        {MenuList && <MenuWidgetList data={MenuList} />}
+        <div className="break"></div>
 
-      {MenuList && <MenuWidgetList data={MenuList} />}
-      <div className="break"></div>
+        {TopResturent && <TopResturentList data={TopResturent} />}
+        <div className="break"></div>
 
-      {TopResturent && <TopResturentList data={TopResturent} />}
-      <div className="break"></div>
-
-     {ResturentWithOnline && <OnlineResturent data={ResturentWithOnline} header_txt={resturentData[2]?.card?.card?.title} />}
+        {ResturentWithOnline && (
+          <OnlineResturent
+            data={ResturentWithOnline}
+            header_txt={resturentData[2]?.card?.card?.title}
+          />
+        )}
+      </div>
+      <AppLink />
+      <Footer cities={cities} />
     </div>
   );
 };

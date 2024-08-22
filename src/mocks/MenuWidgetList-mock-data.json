@@ -1,0 +1,50 @@
+{
+  "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+  "header": {
+    "title": "What's on your mind?",
+    "headerStyling": {}
+  },
+  "layout": {},
+  "imageGridCards": {
+    "info": [
+      {
+        "id": "750201",
+        "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Paratha.png",
+        "action": {
+          "link": "https://www.swiggy.com/collections/80475?collection_id=80475&tags=layout_BAU_Contextual%2Cparatha%2Cads_pc_paratha&type=rcv2",
+          "text": "Paratha",
+          "type": "WEBLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+          "altText": "restaurants curated for paratha",
+          "altTextCta": "open"
+        },
+        "entityId": "80475",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "description": "Paratha"
+      },
+      {
+        "id": "750216",
+        "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pav Bhaji.png",
+        "action": {
+          "link": "https://www.swiggy.com/collections/80362?collection_id=80362&tags=layout_PavBhaji_Contextual&type=rcv2",
+          "text": "Pav Bhaji",
+          "type": "WEBLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+          "altText": "restaurant curated for pav bhaji",
+          "altTextCta": "open"
+        },
+        "entityId": "swiggy://collectionV2?collection_id=80362&tags=layout_PavBhaji_Contextual",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "description": "Pav Bhaji"
+      }
+    ]
+  },
+  "id": "whats_on_your_mind",
+  "gridElements": {}
+}

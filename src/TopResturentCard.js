@@ -2,7 +2,7 @@ import { PRODUCT_IMAGE, ROUNDED_STAR } from "./utils/constant";
 
 const TopResturentCard = ({ data }) => {
   return (
-    <div className="top-resturent-card">
+    <div data-testid='top-res-card' className="top-resturent-card">
       <div className="image">
           <img
             className="top-product-img"

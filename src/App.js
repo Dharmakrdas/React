@@ -11,6 +11,7 @@ import ProductByCatagory from "./ProductByCatagory";
 import { Provider } from "react-redux";
 import appStore from "./redux/appStore";
 import CartPage from "./Cart";
+import Search from "./Search";
 
 
 const App = () => {
@@ -61,6 +62,10 @@ const routes = createBrowserRouter([
       {
         path:"/:category",
         element: <ProductByCatagory />
+      },
+      {
+        path:"/search",
+        element: <Search />
       }
     ],
   },

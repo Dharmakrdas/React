@@ -4,12 +4,12 @@ import { DOWN_ARROW, UP_ARROW } from "./utils/constant";
 const ResturentOptionMenu = ({ data,isShowItems ,setVisible }) => {
 // console.log("click item",isShowItems);
 const handleCLick=()=>{
-  console.log("click item",isShowItems);
+  // console.log("click item",isShowItems);
 
   setVisible();
 }
     return (
-      <div className="menu-container">
+      <div data-testid='res-menu' className="menu-container">
         <div className="menu-items">
           <p className="heading-text">
             {data?.title} ({data?.itemCards?.length})

@@ -2,7 +2,7 @@ import { PRODUCT_IMAGE } from "./utils/constant";
 
 const ResturentOffer = ({ data }) => {
     return (
-      <div className="offer-items">
+      <div data-testid='resturent-offer' className="offer-items">
         <img className="logo" alt="offer-image" src={PRODUCT_IMAGE(data?.info?.offerLogo)}></img>
         <div>
         <p className="heading-text">{data?.info?.header}</p>

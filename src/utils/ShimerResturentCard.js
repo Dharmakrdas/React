@@ -1,3 +1,5 @@
+import { Oval } from "react-loader-spinner";
+
 const ShimerCard = () => {
   return (
     <div className="shimer-card">
@@ -12,26 +14,30 @@ const ShimerCard = () => {
 const ShimerResturentCard = () => {
   return (
     <div className="main-shimer-container">
-       <div
-      className="looking-shimer"
-      >
-        <h1 className=" bold-heading looking-text">Looking for great food near you</h1>
+      <div className="looking-shimer">
+        <div className="loder">
+        <Oval
+          visible={true}
+          height="60"
+          width="60"
+          color="#ffffff"
+          secondaryColor="#fdfdfd"
+          ariaLabel="oval-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+        />
+        <h1 className=" bold-heading looking-text">
+          Looking for great food near you
+        </h1>
+        </div>
       </div>
-    
-    <div className="shimer-container">
-     
-      <ShimerCard />
-      <ShimerCard />
-      <ShimerCard />
-      <ShimerCard />
-      <ShimerCard />
-      <ShimerCard />
-      <ShimerCard />
-      <ShimerCard />
-      <ShimerCard />
-      <ShimerCard />
-      <ShimerCard />
-    </div>
+
+      <div className="shimer-container">
+        <ShimerCard />
+        <ShimerCard />
+        <ShimerCard />
+        <ShimerCard />
+      </div>
     </div>
   );
 };
