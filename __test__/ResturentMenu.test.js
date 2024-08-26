@@ -48,25 +48,11 @@ it("Should be load Res menu component with offers", async () => {
   const resOfferCard = screen.getAllByTestId("resturent-offer");
 
   expect(resOfferCard.length).toBe(5);
+
+  const menuItems = screen.getAllByTestId("res-menu");
+
+  expect(menuItems.length).toBe(16);
 });
 
-it("Should be load with categories of menu list",async()=>{
-    global.fetch =()=>{
-        return Promise.resolve({
-            json:()=>{
-                return Promise.resolve(ResMenuMock);
-            }
-        })
-    }
-    act(()=>{
-        <Provider store={appStore}>
-            <ResturentMenu />
-        </Provider>
-    })
-
-    // const menuItems = screen.getAllByTestId("res-menu");
-
-    // expect(menuItems.length).toBe(10);
-})
 
 
