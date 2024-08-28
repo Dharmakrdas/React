@@ -46,7 +46,11 @@ const Footer = ({ cities }) => {
               </p>
             ))}
           {sortCity && (
-            <p onClick={() => setHide(!isHide)} className="fotter-normal-text">
+            <p
+              data-testid="total-cities"
+              onClick={() => setHide(!isHide)}
+              className="fotter-normal-text"
+            >
               {cities.length - sortCity.length}
               {"cities >"}
             </p>
