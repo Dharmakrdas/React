@@ -60,7 +60,7 @@ const routes = createBrowserRouter([
         element:<CartPage />
       },
       {
-        path:"/:category",
+        path:"/productlist",
         element: <ProductByCatagory />
       },
       {

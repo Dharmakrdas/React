@@ -10,12 +10,12 @@ const handleCLick=()=>{
 }
     return (
       <div data-testid='res-menu' className="menu-container">
-        <div className="menu-items">
+        <div className="menu-items"  onClick={()=>handleCLick()}>
           <p className="heading-text">
             {data?.title} ({data?.itemCards?.length})
           </p>
           <img
-          onClick={()=>handleCLick()}
+         
             alt="down-arrow.png"
             src={ isShowItems ? DOWN_ARROW : UP_ARROW}
             className="down-arrow"

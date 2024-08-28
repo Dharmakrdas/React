@@ -28,7 +28,7 @@ const Body = () => {
   // };
   if (!online)
     return (
-      <h1>
+      <h1 data-testid="offline-text">
         Looks like your connection is offline when you back i will be show your
         detials{" "}
       </h1>

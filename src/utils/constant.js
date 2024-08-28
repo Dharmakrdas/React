@@ -34,3 +34,8 @@ export const searchApi = (text) => {
   const result = `https://www.swiggy.com/dapi/restaurants/search/suggest?lat=12.96340&lng=77.58550&str=${text}`;
   return result;
 };
+
+
+// `https://www.swiggy.com/collections/83639?collection_id=83639&search_context=biryani&tags=layout_CCS_Biryani&type=rcv2`
+// `https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2`
+// "swiggy://collectionV2?collection_id=80440&tags=layout_CCS_Idli"

@@ -23,7 +23,6 @@ const Search = () => {
         response?.data?.suggestions &&
           setSearchData(response?.data?.suggestions);
       }
-      // console.log("delay api call", response?.data?.suggestions);
     } catch (err) {
       setSearchData([]);
       console.log(err);
@@ -42,8 +41,9 @@ const Search = () => {
         className="seach-input"
       />
       <div className="polular-cusines">
-        {PopularCusines && <MenuWidgetList data={PopularCusines} />}
-
+        {isSearchData.length ===0 ? 
+       <div> {PopularCusines && <MenuWidgetList data={PopularCusines} />} </div> : null
+        }
         {isSearchData &&
           isSearchData?.map((item) => (
             <SerachProduct key={item?.text} data={item} />

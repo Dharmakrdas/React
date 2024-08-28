@@ -22,11 +22,11 @@ const Header = () => {
   useEffect(() => {
     // console.log("Use effect called");
   }, []);
-  const handleCount = () => {
-    setCount(count + 1);
-    setCount((count) => count + 1);
-    console.log(count);
-  };
+  // const handleCount = () => {
+  //   setCount(count + 1);
+  //   setCount((count) => count + 1);
+  //   console.log(count);
+  // };
   return (
     <header className="header-container header" id="myHeader">
       <div className="logo-container">

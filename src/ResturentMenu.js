@@ -7,7 +7,7 @@ import ShimemerProductDetails from "./Shimmer/ShimerProductDetails";
 import useResturentMenu from "./Hooks/useResturentMenu";
 
 const ResturentMenu = () => {
-  const [isVisible, setVisible] = useState(0);
+  const [isVisible, setVisible] = useState(null);
   const { resid } = useParams();
   const resurent = useResturentMenu(resid);
 
@@ -29,16 +29,18 @@ const ResturentMenu = () => {
     <ShimemerProductDetails />
   ) : (
     <div className="resturnt-menu-container">
-      <p className="heading-text">{resurent[2]?.card?.card?.info?.name}</p>
+      <p className="heading-text bold-heading">{resurent[2]?.card?.card?.info?.name}</p>
       <ResturentDetailsCard resturentCard={resurent[2]?.card?.card?.info} />
-      <p className="heading-text">Deals for you</p>
-      <div className="offer-container white-background">
+      <p className="heading-text bold-heading">Deals for you</p>
+      <div className="offer-container">
         {resurent[3]?.card?.card?.gridElements?.infoWithStyle?.offers.map(
           (item) => (
             <ResturentOffer key={item?.info?.offerIds[0]} data={item} />
           )
         )}
       </div>
+      <div className="break"></div>
+      <div className="grey">
       {ResturntMenu.map((item, index) => (
         <ResturentOptionMenu
           key={item?.card?.card?.title}
@@ -48,6 +50,7 @@ const ResturentMenu = () => {
           index={index}
         />
       ))}
+      </div>
     </div>
   );
 };

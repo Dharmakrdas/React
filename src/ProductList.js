@@ -8,11 +8,11 @@ const ProductList = ({ data }) => {
         dispatch(addItem(data));
   }
   return (
-    <div className="menu-items white-background">
+    <div data-testid="product-item" className="menu-items white-background">
       <div className="product-list-container">
-        <p>{data?.name}</p>
+        <p className="heading-text">{data?.name}</p>
         <div>
-          {data?.price === undefined ? data?.defaultPrice / 100 : data?.price}{" "}
+        &#x20b9; {data?.price === undefined ? data?.defaultPrice / 100 : data?.price/100}
         </div>
         {data?.ratings?.aggregatedRating?.rating && (
           <div className="rating-container">
