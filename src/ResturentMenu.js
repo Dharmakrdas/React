@@ -5,6 +5,7 @@ import ResturentOffer from "./ResturentOffer";
 import ResturentOptionMenu from "./ResturentOptionMenu";
 import ShimemerProductDetails from "./Shimmer/ShimerProductDetails";
 import useResturentMenu from "./Hooks/useResturentMenu";
+import TextInput from "./component/TextInput";
 
 const ResturentMenu = () => {
   const [isVisible, setVisible] = useState(null);
@@ -41,6 +42,7 @@ const ResturentMenu = () => {
       </div>
       <div className="break"></div>
       <div className="grey">
+        <TextInput />
       {ResturntMenu.map((item, index) => (
         <ResturentOptionMenu
           key={item?.card?.card?.title}
